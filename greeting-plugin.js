@@ -10,6 +10,9 @@ function GreetingPlugin(options) {
   this.init = function() {
     // Get name from URL query string and capitalize it
     var name = getQueryVariable("name");
+
+    if (!name.length) return;
+    
     name = name.charAt(0).toUpperCase() + name.slice(1);
     name = decodeURIComponent(name);
 
