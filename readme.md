@@ -2,12 +2,14 @@
 The GreetingPlugin is a JavaScript plugin that displays a greeting message to visitors on a webpage. The greeting message consists of a customizable greeting text and the name of the visitor, which is extracted from the URL query string.
 
 ## Features
-Customizable greeting text and font size
-Customizable text color and background color
-Option to set a delay before fading out the greeting message
-Usage
+- Customizable greeting text and font size
+- Customizable text color and background color
+- Option to set a delay before fading out the greeting message
+
+## Usage
 To use the plugin, you need to include the JavaScript file in your webpage and create a new GreetingPlugin object with the desired options. Then, you can initialize the plugin by calling the init function.
 
+```
 <!-- Include the plugin JavaScript file -->
 <script src="greeting-plugin.js"></script>
 
@@ -27,6 +29,7 @@ To use the plugin, you need to include the JavaScript file in your webpage and c
   // Initialize the plugin
   greetingPlugin.init();
 </script>
+```
 
 
 ## Options
@@ -43,7 +46,7 @@ The following options are available for the GreetingPlugin:
 Here is an example of how to use the GreetingPlugin to display a greeting message that says "Hello Jane" in 36px font, with a white text color and a black background, and that fades out after 3 seconds:
 
 
-
+```
 // Define the options object
 
 var options = {
@@ -59,3 +62,5 @@ var greetingPlugin = new GreetingPlugin(options);
 
 // Initialize the plugin
 greetingPlugin.init();
+
+```
