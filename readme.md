@@ -17,7 +17,7 @@ To use the plugin, you need to include the JavaScript file in your webpage and c
   // Define the options object
   var options = {
     greeting: "Hello",
-    fontSize: 36,
+    fontSize: "36px",
     textColor: "#fff",
     bgColor: "black",
     delay: 3000
@@ -51,7 +51,7 @@ Here is an example of how to use the GreetingPlugin to display a greeting messag
 
 var options = {
   greeting: "Hello",
-  fontSize: 36,
+  fontSize: "2rem",
   textColor: "#fff",
   bgColor: "black",
   delay: 3000

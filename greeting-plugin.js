@@ -22,7 +22,7 @@ function GreetingPlugin(options) {
 
     // Create the greeting element
     var greeting = document.createElement("div");
-    greeting.innerHTML = greetingText;
+    // greeting.innerHTML = greetingText;
 
     // Set the inline styles for the greeting element
     greeting.style.cssText = "width: 100%; height: 100%; position: fixed; top: 0; left: 0; font-size: " + this.options.fontSize + "; color: " + this.options.textColor + "; text-transform: uppercase; overflow: visible; background-color: " + this.options.bgColor + "; z-index: 1000; text-align: center; line-height: 100vh; transition: all .5s ease-in; pointer-events: none; cursor: pointer;";
@@ -35,6 +35,16 @@ function GreetingPlugin(options) {
     // Add the greeting element to the document
     document.body.appendChild(greeting);
     greeting.id = "greeting";
+
+   // Display each letter of the greeting text one after the other
+    var i = 0;
+    var interval = setInterval(function() {
+      greeting.innerHTML += greetingText[i];
+      i++;
+      if (i >= greetingText.length) {
+        clearInterval(interval);
+      }
+    }, 100); // Display each letter after a 100ms delay
 
     // Fade out the greeting after the specified delay
     setTimeout(function() {
