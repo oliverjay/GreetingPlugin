@@ -36,7 +36,7 @@ To use the plugin, you need to include the JavaScript file in your webpage and c
 The following options are available for the GreetingPlugin:
 
 - greeting (string, default: "Hello"): The greeting text to display.
-- fontSize (number, default: "24px"): The font size of the greeting text, in pixels.
+- fontSize (string, default: "24px"): The font size of the greeting text.
 - textColor (string, default: "#fff"): The color of the greeting text.
 - bgColor (string, default: "black"): The background color of the greeting message.
 - delay (number, default: 2000): The delay, in milliseconds, before fading out the greeting message.
